@@ -1,3 +1,9 @@
+# revision 15878
+# category Package
+# catalog-ctan /macros/generic/encxvlna
+# catalog-date 2008-08-19 08:58:40 +0200
+# catalog-license lppl
+# catalog-version undef
 Name:		texlive-encxvlna
 Version:	20080819
 Release:	1
@@ -46,6 +52,7 @@ other packages.
 %doc %{_texmfdistdir}/doc/generic/encxvlna/encxvlna.pdf
 %doc %{_texmfdistdir}/doc/generic/encxvlna/encxvlna.tex
 %doc %{_texmfdistdir}/doc/generic/encxvlna/vlna-inc.tex
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -56,3 +63,5 @@ other packages.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
