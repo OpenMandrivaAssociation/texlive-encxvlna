@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-encxvlna
 Version:	20080819
-Release:	2
+Release:	3
 Summary:	Insert nonbreakable spaces, using encTeX
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/generic/encxvlna
