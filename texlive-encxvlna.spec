@@ -5,7 +5,7 @@
 # catalog-license lppl
 # catalog-version undef
 Name:		texlive-encxvlna
-Version:	20170414
+Version:	1.1
 Release:	1
 Summary:	Insert nonbreakable spaces, using encTeX
 Group:		Publishing
