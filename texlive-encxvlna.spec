@@ -1,18 +1,12 @@
-# revision 15878
-# category Package
-# catalog-ctan /macros/generic/encxvlna
-# catalog-date 2008-08-19 08:58:40 +0200
-# catalog-license lppl
-# catalog-version undef
 Name:		texlive-encxvlna
-Version:	1.1
-Release:	2
+Version:	34087
+Release:	1
 Summary:	Insert nonbreakable spaces, using encTeX
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/generic/encxvlna
 License:	LPPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/encxvlna.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/encxvlna.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/encxvlna.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/encxvlna.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -27,12 +21,12 @@ and LaTeX. The LaTeX solution tries to avoid conflicts with
 other packages.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -46,24 +40,10 @@ other packages.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 20080819-2
-+ Revision: 751416
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 20080819-1
-+ Revision: 718330
-- texlive-encxvlna
-- texlive-encxvlna
-- texlive-encxvlna
-- texlive-encxvlna
-
