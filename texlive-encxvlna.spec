@@ -1,6 +1,6 @@
 Name:		texlive-encxvlna
 Version:	34087
-Release:	1
+Release:	2
 Summary:	Insert nonbreakable spaces, using encTeX
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/generic/encxvlna
