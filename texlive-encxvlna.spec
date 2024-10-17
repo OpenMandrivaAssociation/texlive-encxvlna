@@ -3,7 +3,7 @@ Version:	34087
 Release:	2
 Summary:	Insert nonbreakable spaces, using encTeX
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/generic/encxvlna
+URL:		https://www.ctan.org/tex-archive/macros/generic/encxvlna
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/encxvlna.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/encxvlna.doc.r%{version}.tar.xz
